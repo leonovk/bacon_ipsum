@@ -1,0 +1,14 @@
+require:
+  - rubocop-rspec
+
+Style/Documentation:
+  Enabled: false
+
+Style/CaseLikeIf:
+  Enabled: false
+
+RSpec/ContextWording:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
