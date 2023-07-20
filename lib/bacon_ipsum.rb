@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 require_relative 'bacon_ipsum/http_client'
 require_relative 'bacon_ipsum/parser'
