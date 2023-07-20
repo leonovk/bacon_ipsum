@@ -26,5 +26,7 @@ jobs:
           ruby-version: '3.1'
       - name: Install dependencies
         run: bundle install
-      - name: Run tests
+      - name: Run specs
         run: bundle exec rspec
+      - name: Run cops
+        run: bundle exec rubocop
