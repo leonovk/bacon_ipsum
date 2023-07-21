@@ -15,5 +15,5 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 2.7.0'
   s.metadata['homepage_uri'] = s.homepage
   s.metadata['source_code_uri'] = s.homepage
-  s.add_dependency 'typhoeus'
+  s.add_dependency 'typhoeus', '~> 1.4'
 end

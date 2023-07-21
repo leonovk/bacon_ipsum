@@ -16,10 +16,12 @@ $ bundle install
 ### Usage
 
 ```ruby
-BaconIpsum.generate(paras: 5, sentences: 2)
+BaconIpsum.generate(paras: 5, sentences: nil)
 ```
 Can take 2 arguments
 Default values (paras: 5, sentences: 2)
+paras: optional number of paragraphs
+sentences: number of sentences (this overrides paragraphs)
 
 ### Output example
 
