@@ -29,3 +29,7 @@ returns an array with strings:
     "Bacon ipsum dolor amet prosciutto hamburger venison alcatra drumstick chicken boudin pork loin.  Frankfurter kielbasa tail leberkas shank.",
     "Strip steak pork chop sausage andouille pancetta turkey.  Chicken corned beef ball tip tri-tip."
 ]
+
+### Contribution
+
+If you would like to contribute to the development, submit a pull request with your changes. We welcome any contributions that improve the service. You can also view the current project board here.  You can also contribute by reporting bugs or suggesting new features. Please use the GitHub issues for that.
