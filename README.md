@@ -1,5 +1,5 @@
 ## bacon_ipsum
-[![Build Status](https://github.com/leonovk/bacon_ipsum/actions/workflows/ruby.yml/badge.svg)](https://github.com/leonovk/bacon_ipsum/actions/workflows/ruby.yml) ![Gem](https://img.shields.io/gem/dt/bacon_ipsum)
+[![Build Status](https://github.com/leonovk/bacon_ipsum/actions/workflows/ruby.yml/badge.svg)](https://github.com/leonovk/bacon_ipsum/actions/workflows/ruby.yml) ![Gem](https://img.shields.io/gem/dt/bacon_ipsum) [![Gem Version](https://badge.fury.io/rb/bacon_ipsum.svg)](https://badge.fury.io/rb/bacon_ipsum)
 
 ### Description
 
