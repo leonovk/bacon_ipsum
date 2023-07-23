@@ -4,8 +4,16 @@ require 'json'
 
 module BaconIpsum
   class Parser
-    def self.parse(response)
+    attr_reader :response, :format
+
+    def initialize(response, format)
+      @response = response
+      @format = format
+    end
+
+    def parse
       return unless response
+      return response if format != 'json'
 
       JSON.parse(response)
     end

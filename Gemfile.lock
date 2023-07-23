@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bacon_ipsum (0.0.2)
+    bacon_ipsum (0.0.3)
       typhoeus (~> 1.4)
 
 GEM
@@ -84,4 +84,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   2.4.15
+   2.4.17
