@@ -4,7 +4,7 @@
 ### Description
 
 SDK for JSON API - Bacon Ipsum
-Allows you to generate random text using Bacon Ipsum API
+Allows you to generate random text using [Bacon Ipsum API](https://baconipsum.com/json-api/)
 
 ### Installation
 
