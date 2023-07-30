@@ -53,7 +53,7 @@ BaconIpsum.generate(paras: 1, type: 'all-meat', start_with_lorem: 1, format: 'te
 #output: 'Bacon ipsum dolor amet in incididunt strip steak ullamco brisket minim nulla pariatur flank.'
 ```
 
-If you use the format jos will return an array with strings:
+If you use the format json will return an array with strings:
 
 [
 "Bacon ipsum dolor amet prosciutto hamburger venison alcatra drumstick chicken boudin pork loin.  Frankfurter kielbasa tail leberkas shank.", "Strip steak pork chop sausage andouille pancetta turkey.  Chicken corned beef ball tip tri-tip."
