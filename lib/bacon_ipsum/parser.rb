@@ -4,7 +4,7 @@ require 'json'
 
 module BaconIpsum
   class Parser
-    attr_reader :response, :format
+    attr_accessor :response, :format
 
     def initialize(response, format)
       @response = response
