@@ -4,6 +4,7 @@ require_relative '../lib/bacon_ipsum/http_client'
 require_relative '../lib/bacon_ipsum/parser'
 require 'webmock/rspec'
 require 'json'
+require 'byebug'
 
 RSpec.configure do |config|
   config.example_status_persistence_file_path = '.rspec_status'

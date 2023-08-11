@@ -23,7 +23,7 @@ module BaconIpsum
         params: params,
         timeout: REQUEST_TIMEOUT
       )
-      return false unless response.success?
+      raise 'BaconFail' unless response.success?
 
       response.body
     end

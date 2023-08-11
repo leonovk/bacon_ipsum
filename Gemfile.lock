@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bacon_ipsum (0.0.5)
+    bacon_ipsum (0.0.6)
       typhoeus (~> 1.4)
 
 GEM
