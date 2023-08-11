@@ -42,8 +42,9 @@ RSpec.describe BaconIpsum::HttpClient do
         allow(typhoeus_response).to receive(:success?).and_return(false)
       end
 
-      it 'returns false' do
-        expect(http_client.get).to eq(false)
+      it 'raise error' do
+        expect { http_client.get }
+          .to raise_error(RuntimeError, 'BaconFail')
       end
     end
   end
