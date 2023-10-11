@@ -23,3 +23,11 @@ jobs:
         run: bundle exec rspec
       - name: Run cops
         run: bundle exec rubocop
+
+        if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'master'
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build and publish to RubyGems
+        uses: actionshub/publish-gem-to-rubygems@main
+        with:
+          api_key: ${{ secrets.RUBY_GEMS_API_KEY }}
