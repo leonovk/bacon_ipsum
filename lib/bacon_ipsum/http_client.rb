@@ -3,6 +3,7 @@
 require 'typhoeus'
 
 module BaconIpsum
+  # http client for requests to bacon ipsum api
   class HttpClient
     BASE_ENDPOINT = 'https://baconipsum.com/api/'
     REQUEST_TIMEOUT = 30
