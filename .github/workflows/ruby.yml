@@ -7,7 +7,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-  test:
+  specs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -19,16 +19,16 @@ jobs:
         run: bundle install
       - name: Run specs
         run: bundle exec rspec
-      - name: Run cops
-        run: bundle exec rubocop
 
-  build:
-    name: Build + Publish
+  cops:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Build and publish to RubyGems
-        uses: actionshub/publish-gem-to-rubygems@main
+      - uses: actions/checkout@v3
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@ec02537da5712d66d4d50a0f33b7eb52773b5ed1
         with:
-          api_key: ${{ secrets.RUBY_GEMS_API_KEY }}
+          ruby-version: '3.1'
+      - name: Install dependencies
+        run: bundle install
+      - name: Run cops
+        run: bundle exec rubocop
