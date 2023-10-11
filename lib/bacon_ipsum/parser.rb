@@ -3,6 +3,7 @@
 require 'json'
 
 module BaconIpsum
+  # parser of results received from HTTP client
   class Parser
     attr_accessor :response, :format
 

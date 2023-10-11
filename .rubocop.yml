@@ -1,9 +1,6 @@
 require:
   - rubocop-rspec
 
-Style/Documentation:
-  Enabled: false
-
 Style/CaseLikeIf:
   Enabled: false
 
