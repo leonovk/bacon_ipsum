@@ -24,10 +24,3 @@ jobs:
       - name: Run cops
         run: bundle exec rubocop
 
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Build and publish to RubyGems
-        uses: actionshub/publish-gem-to-rubygems@main
-        with:
-          api_key: ${{ secrets.RUBY_GEMS_API_KEY }}
