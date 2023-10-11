@@ -8,7 +8,9 @@ on:
 
 jobs:
   test:
+
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
       - name: Set up Ruby
@@ -17,10 +19,7 @@ jobs:
           ruby-version: '3.1'
       - name: Install dependencies
         run: bundle install
-
       - name: Run specs
         run: bundle exec rspec
-
       - name: Run cops
         run: bundle exec rubocop
-
