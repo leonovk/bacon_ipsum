@@ -27,6 +27,7 @@ jobs:
         if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'master'
       - name: Checkout
         uses: actions/checkout@v2
+        if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'master'
       - name: Build and publish to RubyGems
         uses: actionshub/publish-gem-to-rubygems@main
         with:
