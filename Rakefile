@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'dotenv/load'
 require_relative 'lib/bacon_ipsum/version'
 
 task :build_and_push do
