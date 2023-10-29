@@ -4,7 +4,6 @@ require_relative '../lib/bacon_ipsum/http_client'
 require_relative '../lib/bacon_ipsum/parser'
 require_relative '../lib/bacon_ipsum/version'
 require_relative '../lib/bacon_ipsum'
-require 'webmock/rspec'
 require 'json'
 require 'byebug'
 
