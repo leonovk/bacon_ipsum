@@ -2,6 +2,6 @@
 
 RSpec.describe 'BaconIpsum::VERSION' do
   it 'returns version' do
-    expect(BaconIpsum::VERSION).to eq('0.1.3')
+    expect(BaconIpsum::VERSION).to eq('0.1.4')
   end
 end
