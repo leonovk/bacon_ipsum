@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'typhoeus'
+require_relative 'bacon_error'
 
 module BaconIpsum
   # http client for requests to bacon ipsum api
@@ -24,7 +25,7 @@ module BaconIpsum
         params: params,
         timeout: REQUEST_TIMEOUT
       )
-      raise 'BaconFail' unless response.success?
+      raise BaconError, 'response not success' unless response.success?
 
       response.body
     end

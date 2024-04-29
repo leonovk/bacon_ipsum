@@ -44,7 +44,7 @@ RSpec.describe BaconIpsum::HttpClient do
 
       it 'raise error' do
         expect { http_client.get }
-          .to raise_error(RuntimeError, 'BaconFail')
+          .to raise_error(BaconError, 'response not success')
       end
     end
   end
