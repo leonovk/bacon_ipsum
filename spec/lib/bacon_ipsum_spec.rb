@@ -14,8 +14,7 @@ RSpec.describe BaconIpsum do
 
   before do
     allow(Typhoeus).to receive(:get).and_return(typhoeus_response)
-    allow(typhoeus_response).to receive(:success?).and_return(true)
-    allow(typhoeus_response).to receive(:body).and_return(result_text)
+    allow(typhoeus_response).to receive_messages(success?: true, body: result_text)
   end
 
   it 'returns text' do
