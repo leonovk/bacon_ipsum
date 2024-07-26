@@ -28,8 +28,7 @@ RSpec.describe BaconIpsum::HttpClient do
 
     context 'when the request is successful' do
       before do
-        allow(typhoeus_response).to receive(:success?).and_return(true)
-        allow(typhoeus_response).to receive(:body).and_return('Lorem ipsum dolor sit amet')
+        allow(typhoeus_response).to receive_messages(success?: true, body: 'Lorem ipsum dolor sit amet')
       end
 
       it 'returns the response body' do

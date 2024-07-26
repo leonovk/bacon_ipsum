@@ -8,7 +8,7 @@ RSpec.describe BaconIpsum::Parser do
     let(:format) { nil }
 
     it 'returns nil' do
-      expect(parse).to eq(nil)
+      expect(parse).to be_nil
     end
   end
 
